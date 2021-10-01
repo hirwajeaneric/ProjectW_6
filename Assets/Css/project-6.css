@@ -133,11 +133,12 @@ body {
 }
 
 .studio .studio-content .text-container .text-description {
-	position: absolute;
-    top: 50%;
+	position: relative;
+    /*top: 50%;*/
     left: 50%;
     transform: translate(-50%, -50%);
-	width: 700px;
+	width: 800px;
+	margin-top: 100px;
 }
 
 .studio .studio-content .member-photos {
@@ -146,11 +147,11 @@ body {
 	flex-wrap: wrap;
 	text-align: center;
 	justify-content: center;
-	padding-top: 30px;
+	margin-top: 0px;
 }
 
 .studio .studio-content .member-photos .member {
-	padding: 50px;
+	padding: 0 50px 50px 50px;
 	font-weight: 100;
 } 
 
@@ -172,18 +173,54 @@ body {
 		margin-left: 30px;
 	}
 
-
 	/*SLIDER*/
 	.slideshow-container .mySlides .text {
 		font-size: 40px;
 		top: 40%;
 		text-align: center;
 	}
-	
+
+	/*STUDIO*/
+	.studio .studio-content {
+		text-align: center;
+		padding: 50px;
+	}
+
+	.studio .studio-content .text-container .text-description {
+		width: 600px;
+		margin-top: 100px;
+	}
+
+	.studio .studio-content .member-photos .member {
+		padding: 0 20px 20px 20px;
+	} 
+
 }
 
-@media (max-width: 750px) {
+@media (max-width: 790px) {
 	
+	/*THE STUDIO*/
+	.studio .studio-content {
+		padding: 50px;
+	}
+	
+	.studio .studio-content .member-photos {
+		margin-top: -50px;
+	}
+
+	.studio .studio-content .member-photos .member {
+		padding: 0 10px 10px 10px;
+	}
+
+	.studio .studio-content .member-photos .member p {
+		
+	}
+
+	.studio .studio-content .text-container .text-description {
+		width: 600px;
+		margin-top: 140px;
+	}
+
 }
 
 @media (max-width: 600px) {
@@ -212,5 +249,36 @@ body {
 	.slideshow-container .mySlides .text2 {
 		font-size: 15px;
 	}
+
+	/*STUDIO*/
+	.studio .studio-content .member-photos .member {
+		padding: 0 10px 10px 10px;
+	}
+
+	.studio .studio-content .text-container .text-description {
+		width: 90%;
+		margin-top: 200px;
+	}	
+
+	.studio .studio-content {
+		padding: 50px 30px 30px 30px;
+	}
+
+	.studio .studio-content .member-photos .member {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+	.studio .studio-content .member-photos {
+		margin-top: -100px;
+	}
+
+	.studio .studio-content img {
+		width: 200px;
+		border-radius: 10px;
+		margin-top: 18px;
+	}
+	
+
 }
 
