@@ -168,11 +168,18 @@ body {
 	margin-top: 18px;
 }
 
+
 /*STYLING FOR TIMELINE*/
 .timeline {
 	background-color: black;
 	min-height: 1000px;
 }
+
+/*
+.timeline .timeline-content {
+	align-items: center;
+}
+*/
 
 .timeline .timeline-content h1 {
 	color: white;
@@ -181,21 +188,46 @@ body {
 }
 
 .timeline .timeline-content .dates {
-	width: 70%;
+	width: 700px;
+	margin-top: 40px;
 }
 
 .timeline .timeline-content .dates .oneDate{
 	display: block;
 	width: 100%;
-	height: 50px;
+	height: 36px;
 	background-color: white;
 	border-bottom: solid 1.5px gray;
 	text-align: left;
-	
+
 }
 
+.timeline-content .dates .oneDate .date-content {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	padding: 8px 16px;
+	font-size: 90%;
+	color: #717171;	
+}
 
+.date-content .status {
+	margin-left: 40px;
+	display: block;
+	padding: 2px 8px;
+	background-color: rgb(255, 83, 83);
+	color: white;
+}
 
+.date-content .aNumber p {
+	display: block;
+	padding: 2px 6px;
+	background-color: black;
+	color: white;
+	border-radius: 50%;
+	float: right;
+	margin-right: 16px !important;
+}
 
 
 
