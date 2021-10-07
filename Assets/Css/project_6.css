@@ -7,6 +7,112 @@ body {
 }
 
 
+/*STYLE FOR THE NAVIGATION BAR.*/
+.navigation-bar {
+	overflow: hidden;
+	background-color: rgb(0, 0, 0);
+	height: 60px;
+	z-index: 1000;
+	position: fixed;
+	width: 100%;
+}
+
+.navigation-bar .link1,
+.navigation-bar .link2,
+.navigation-bar .link3,
+.navigation-bar .link4,
+.navigation-bar .link5 {
+	padding-top: 20px;
+}
+
+.navigation-bar .link5 {
+    display: none;
+}
+
+.navigation-bar a {
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	text-decoration: none;
+	font-size: 17px;
+	padding-left: 18px;
+}
+.navigation-bar a:hover {
+	color: gray;
+}
+.navigation-bar a.active {
+	color: gray;
+}
+.navigation-bar .logo {
+	width: 150px;
+	padding-top: 12px;
+	margin-left: 50px;
+}
+
+
+
+
+/*STYLE FOR THE SLIDE SHOW.*/
+
+/* Slideshow container */
+.slideshow-container {
+	z-index: 998;
+	max-width: 100%;
+  	position: relative;
+    width: 100%;
+}
+
+.mySlides {
+	display: none;
+}
+.slideImage {
+	vertical-align: middle;
+}
+
+/* Caption text */
+.text {
+  	color: #f2f2f2;
+  	font-size: 45px;
+	font-weight: 800;
+  	position: absolute;
+  	top: 50%;
+    width: 100%;
+  	text-align: center;
+}
+.text2 {
+	color: #f2f2f2;
+  	font-size: 20px;
+  	position: absolute;
+  	top: 70%;
+  	width: 100%;
+  	text-align: center;
+}
+
+.active {
+  	background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  	-webkit-animation-name: fade;
+  	-webkit-animation-duration: 1.5s;
+  	animation-name: fade;
+  	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  	from {opacity: .4} 
+  	to {opacity: 1}
+}
+
+@keyframes fade {
+  	from {opacity: .4} 
+  	to {opacity: 1}
+}
+
+
+
+
 
 /*STYLING FOR THE STUDIO*/
 .studio {
@@ -33,6 +139,13 @@ body {
     text-align: justify;
 }
 
+.studio h2 {
+    padding-top:30px;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
+
 .studio ul {
     list-style: none;
     text-decoration: none;
@@ -42,10 +155,6 @@ body {
     flex-direction: row;
     align-items: center;
     
-}
-
-.studio li {
-    margin-top: 40px;
 }
 
 .studio .second {
@@ -136,7 +245,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 20px;
-    
+    justify-content: center;
 }
 
 .aCard {
@@ -348,6 +457,25 @@ footer p {
     
 
 @media (max-width: 991px) {
+
+    /*NAVIGATION BAR*/
+	.navigation-bar .logo {
+		margin-left: 30px;
+	}
+
+	/*SLIDER*/
+
+    .slideshow-container {
+        width: 100%;
+    }
+	.slideshow-container .mySlides .text {
+		font-size: 40px;
+		top: 40%;
+		text-align: center;
+        width: 100%;
+	}
+
+
     /*STYLING FOR THE STUDIO*/
     
     .studio {
@@ -543,12 +671,50 @@ footer p {
 }
 
 @media (max-width: 600px) {
+    
+    /*NAVIGATION BAR*/
+    .navigation-bar {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+	.navigation-bar .logo {
+		margin-left: 10px;
+	}
+    .navigation-bar .link1,
+    .navigation-bar .link2,
+    .navigation-bar .link3,
+    .navigation-bar .link4 {
+        display: none;
+    }
+
+    .navigation-bar .link5 {
+        display: block;
+        float: right;
+        margin-right: 30px;
+    }
+
+
+
+	/*SLIDER*/
+    .slideshow-container {
+        width: 100%;
+    }
+	.slideshow-container .mySlides .text {
+		font-size: 30px;
+		top: 40%;
+		text-align: center;
+	}
+    .slideshow-container .mySlides .text2 {
+        display: none;
+    }
+    
     /*STYLING FOR THE STUDIO*/
     .studio {
         padding: 20px; 
     }
 
     .studio h1 {
+        margin-top: 20px;
         font-size: 150%;
     }
 
@@ -570,6 +736,10 @@ footer p {
 
     .studio li {
         margin-top: 20px;
+    }
+
+    .studio .names {
+        text-align: center;
     }
 
     .studio img {
