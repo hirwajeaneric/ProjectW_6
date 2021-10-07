@@ -324,13 +324,92 @@ footer p {
 /*RESPONSIVENESS.*/
 
 @media (max-width: 1050px) {
+    /*STYLING FOR THE STUDIO*/
     
-}
-
+    .studio {
+        padding-top: 40px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 40px;
+    }
+       
+    /*STYLING FOR THE TIMELINE*/
+    
+    .timeline {
+        padding-top: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 40px;
+    }
+    
+    .timeline .dates {
+        width: 800px;
+    }
+    
 
 @media (max-width: 991px) {
+    /*STYLING FOR THE STUDIO*/
     
+    .studio {
+        padding-top: 40px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 40px;
+    }
 
+    .studio .text-description {
+        width: 750px;
+    }
+
+    .studio .second {
+        margin-left:50px;
+        margin-right: 50px;
+    }
+       
+    /*STYLING FOR THE TIMELINE*/
+
+    .timeline .dates {
+        width: 750px;
+    }
+    
+    /*TIMELINE CARDS*/
+    
+    .aCard {
+        background-color: white;
+        width: 245px;
+        margin: 4px;
+    }
+    
+    .aCard img {
+        width: 245px;
+    }
+
+    /*STYLING THE CONTACT*/
+    
+    .contact {
+        padding-top: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 40px;
+    }
+
+    .contact .contact-content {
+        width: 750px;
+    }
+
+    .contact .the-form .name-and-email input[type="text"] {
+        width: 91%;
+    }
+
+    .contact .the-form .name-and-email #name {
+        margin-bottom: 5px;
+    }
+    
+    /*CALL TO ACTION STYLINGS*/
+    
+    .call-to-action {
+        min-height: 500px;
+    }
 }
 
 
@@ -454,7 +533,7 @@ footer p {
     
     /*CALL TO ACTION STYLINGS*/
     .call-to-action {
-        min-height: 500px;
+        min-height: 400px;
     }
 
     .call-to-action .content{
@@ -464,5 +543,178 @@ footer p {
 }
 
 @media (max-width: 600px) {
-    
+    /*STYLING FOR THE STUDIO*/
+    .studio {
+        padding: 20px; 
+    }
+
+    .studio h1 {
+        font-size: 150%;
+    }
+
+    .studio .subTitle {
+        color: gray;
+        padding: 15px;
+    }
+
+    .studio .text-description {
+        width: 100%;
+    }
+
+    .studio ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .studio li {
+        margin-top: 20px;
+    }
+
+    .studio img {
+        width: 250px;
+    }
+
+
+    /*STYLING FOR THE TIMELINE*/
+    .timeline {
+        padding: 20px;
+        margin-top: 40px;
+    }
+
+    .timeline h1 {
+        font-size: 150%;
+    }
+
+    .timeline .subTitle {
+        padding: 15px;
+    }
+
+    .timeline .dates {
+        width: 100%;
+    }
+
+    .timeline .dates li {
+        padding: 5px 8px;
+    }
+
+    .timeline .dates .internal-content .aNumber {
+        margin-right: 10px;
+    }
+
+    /*CARDS*/
+    .cards {
+        justify-content: center;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    .aCard {
+        width: 100%;
+        margin: 10px;
+    }
+
+    .aCard img {
+        width: 100%;
+    }
+
+    .aCard .city {
+        font-size: 120%;
+    }
+
+    .aCard .description {
+        line-height: 18px;
+    }
+    .aCard a {
+        text-decoration: none;
+        display: block;
+        padding: 12px 16px;
+        background-color: black;
+        color: white;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        float: left;
+        cursor: pointer;
+    }
+    .aCard a:hover {
+        background-color: gray;
+        color: black;
+    }
+
+
+
+    /*STYLING THE CONTACT*/
+    .contact {
+        padding: 20px;
+    }
+
+    .contact h1 {
+        margin-top: 40px;
+        font-size: 150%;
+    }
+
+    .contact .subTitle {
+        padding: 15px;
+    }
+
+    .contact .contact-content {
+        flex-direction: column !important;
+        align-items: flex-start;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .contact .location-information {
+        text-align: left;
+        width: 100%;
+        font-size: 110%;
+    }
+
+    .contact .the-form {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .contact .the-form .name-and-email {
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 5px;
+    }
+
+    .contact .the-form .name-and-email input[type=text]{ 
+        padding: 16px 12px;
+        width: 91%;
+    }
+
+    /*CALL TO ACTION STYLINGS*/
+    .call-to-action {
+        min-height: 400px;
+    }
+
+    .call-to-action img {
+        height: 400px;
+    }
+
+    .call-to-action .content{
+        width: 75%;
+        padding: 20px;
+    }
+
+    .call-to-action p {
+        font-weight: 600;
+        line-height: 1.5;
+        font-size: 110%;
+    }
+
+    /*THE FOOTER*/
+    footer {
+        min-height: 50px;
+    }
+
+    footer p {
+        padding: 40px;
+        font-size: 90%;
+        line-height: 1.5;
+    }
 }
